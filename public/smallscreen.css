@@ -1,0 +1,198 @@
+
+/* Global selectors */
+body{
+    background-color:	#66A182;
+    color: #2E4057;
+  }
+
+  header{
+    margin: auto;
+    margin-bottom: 80px;
+  }
+
+  .num {
+    font-size: 16px;
+    position: absolute;
+    font-weight: bold;
+    z-index: 3;
+    font-family: 'Poppins', sans-serif;
+  }
+
+
+/* Clock selectors */
+.clock {
+  position: relative;
+  height: 250px;
+  width: 250px;
+  background-color: #CAFFB9;
+  border: solid 8px #000;
+  border-radius: 50%;
+  box-shadow: 0 2vw 4vw -1vw black;
+  z-index: 1;
+  margin: auto;
+}
+
+.dot {
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  background-color: #000;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 50%;
+  z-index: 8;
+}
+
+.date, .day {
+  position: absolute;
+  display: inline-block;
+  background-color: #C0D461;
+  font-weight: bold;
+  border-radius: 25%;
+  left: 50%;
+  font-size: 12px;
+  text-align: center;
+  width: 87px;
+  margin-left: -43px;
+  z-index: 2;
+  font-family: 'Poiret One', cursive;
+}
+
+.date {
+  top: 57px;
+  padding: 3px;
+}
+
+.day{
+  bottom: 57px;
+  padding: 3px;
+  font-size: 15px;
+}
+
+.hr12 {
+  left: 50%;
+  top: 21px;
+  margin-left: -8px;
+}
+
+.hr6 {
+  left: 50%;
+  bottom: 21px;
+  margin-left: -5px;
+}
+
+.hr9 {
+  top: 50%;
+  left: 21px;
+  margin-top: -12px;
+}
+
+.hr3 {
+  top: 50%;
+  right: 21px;
+  margin-top: -12px;
+}
+
+.hands {
+  position: absolute;
+  display: inline-block;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  width: 3px;
+  transform-origin: 50% 100%;
+  bottom: 50%;
+  left: 50%;
+  margin-left: -2px;
+  opacity: 0.7;
+}
+
+.hour-hand {
+  height: 50px;
+  background-color: #000;
+  z-index: 4;
+}
+
+.min-hand {
+  height: 65px;
+  background-color: #000;
+  z-index: 5;
+}
+
+.sec-hand {
+  height: 79px;
+  background-color: #66A182;
+  z-index: 6;
+}
+
+.diallines {
+  position: absolute;
+  left: 50%;
+  margin-left: -2px;
+  width: 2px;
+  height: 11px;
+  z-index: 2;
+  background-color: #000;
+  transform-origin: 50% 115px;
+}
+
+.diallines:nth-child(5n+1) {
+  position: absolute;
+  left: 50%;
+  margin-left: -2px;
+  width: 4px;
+  height: 18px;
+  z-index: 2;
+  background-color: #000;
+  transform-origin: 50% 115px;
+}
+
+
+/* Weather selectors */
+.weather {
+  text-align: center;
+  font-size: 22px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  margin: auto;
+  margin-top: 72px;
+}
+
+
+/* Location selector */
+h1{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  font-size: 50px;
+  margin: 50px 0;
+}
+
+
+/* Digital clock selectors */
+.digital {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 28px;
+  text-shadow: 1px 4px 2px grey;
+}
+
+ 
+/* Media query to change sizes for very small screens */
+@media screen and (max-width: 400px) {
+
+  .header {
+    margin-bottom: 40px;
+  }
+
+  .weather {
+    font-size: 22px;
+    margin-top: 50px;
+  }
+
+  h1 {
+      margin: auto;
+      margin-bottom: 20px;
+  }
+
+} 

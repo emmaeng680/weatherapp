@@ -1,0 +1,178 @@
+
+/* Global selectors */
+  body{
+    background-color:	#66A182;
+    color: #2E4057;
+  }
+
+  header{
+    margin: auto;
+    margin-bottom: 100px;
+  }
+
+  .num {
+    font-size: 1.5rem;
+    position: absolute;
+    font-weight: bold;
+    z-index: 3;
+    font-family: 'Poppins', sans-serif;
+  }
+
+
+/* Clock selectors */
+.clock {
+  position: relative;
+  height: 350px;
+  width: 350px;
+  background-color: #CAFFB9;
+  border: solid 15px #000;
+  border-radius: 50%;
+  box-shadow: 0 2vw 4vw -1vw black;
+  z-index: 1;
+  margin: auto;
+}
+
+.dot {
+  position: absolute;
+  height: 14px;
+  width: 14px;
+  background-color: #000;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  border-radius: 50%;
+  z-index: 8;
+}
+
+.date, .day {
+  position: absolute;
+  display: inline-block;
+  background-color: #C0D461;
+  font-weight: bold;
+  border-radius: 25%;
+  left: 50%;
+  font-size: 16px;
+  text-align: center;
+  width: 120px;
+  margin-left: -60px;
+  z-index: 2;
+  font-family: 'Poiret One', cursive;
+}
+
+.date {
+  top: 80px;
+  padding: 5px;
+}
+
+.day{
+  bottom: 80px;
+  padding: 5px;
+  font-size: 20px;
+}
+
+.hr12 {
+  left: 50%;
+  top: 30px;
+  margin-left: -12px;
+}
+
+.hr6 {
+  left: 50%;
+  bottom: 30px;
+  margin-left: -8px;
+}
+
+.hr9 {
+  top: 50%;
+  left: 30px;
+  margin-top: -19px;
+}
+
+.hr3 {
+  top: 50%;
+  right: 30px;
+  margin-top: -19px;
+}
+
+.hands {
+  position: absolute;
+  display: inline-block;
+  border-top-left-radius: 50%;
+  border-top-right-radius: 50%;
+  width: 5px;
+  transform-origin: 50% 100%;
+  bottom: 50%;
+  left: 50%;
+  margin-left: -3px;
+  opacity: 0.9;
+}
+
+.hour-hand {
+  height: 70px;
+  background-color: #000;
+  z-index: 4;
+}
+
+.min-hand {
+  height: 90px;
+  background-color: #000;
+  z-index: 5;
+}
+
+.sec-hand {
+  height: 110px;
+  background-color: #66A182;
+  z-index: 6;
+}
+
+.diallines {
+  position: absolute;
+  left: 50%;
+  margin-left: -2px;
+  width: 2px;
+  height: 15px;
+  z-index: 2;
+  background-color: #000;
+  transform-origin: 50% 160px;
+}
+
+.diallines:nth-child(5n+1) {
+  position: absolute;
+  left: 50%;
+  margin-left: -2px;
+  width: 4px;
+  height: 25px;
+  z-index: 2;
+  background-color: #000;
+  transform-origin: 50% 160px;
+}
+
+
+/* Weather selectors */
+.weather {
+  text-align: center;
+  font-size: 30px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  margin: auto;
+  margin-top: 100px;
+}
+
+
+/* Location selector */
+h1{
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  font-size: 70px;
+  margin: 50px 0;
+}
+
+
+/* Digital clock selectors */
+.digital {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 40px;
+  text-shadow: 1px 4px 2px grey;
+}
